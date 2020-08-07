@@ -1,0 +1,35 @@
+{
+  "name": "transip/php-deobfuscator",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "krageon",
+      "email": "phpdeobfuscator@voor.money"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "symfony/console": "^3.1",
+    "symfony/process": "^3.1",
+    "tpunt/php-ast-reverter": "dev-fix/return-binary-op-semicolon"
+  },
+  "autoload": {
+    "psr-4": {
+      "Transip\\": "src/"
+    }
+  },
+  "require-dev": {
+    "link0/profiler": "dev-tideway-support",
+    "phpunit/phpunit": "~6.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/krageon/profiler.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/krageon/php-ast-reverter.git"
+    }
+  ]
+}
